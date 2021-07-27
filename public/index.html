@@ -31,6 +31,17 @@
           responseText.innerText = JSON.stringify(response)
         })
 
+        fetchHoennBtn.addEventListener('click', async () => {
+          const response = await fetch('/.netlify/functions/pokedex', {
+            method: 'POST',
+            body: JSON.stringify({
+              region: 'hoenn'
+            })
+          }).then(response => response.json())
+
+          responseText.innerText = JSON.stringify(response)
+        })
+
         fetchBtn.addEventListener('click', async () => {
           const response = await fetch('/.netlify/functions/hello-world').then(
             response => response.json()
