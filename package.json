@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/netlify/explorers-up-and-running-with-serverless-functions/issues"
   },
-  "homepage": "https://github.com/netlify/explorers-up-and-running-with-serverless-functions#readme"
+  "homepage": "https://github.com/netlify/explorers-up-and-running-with-serverless-functions#readme",
+  "devDependencies": {
+    "node-fetch": "^2.6.1"
+  }
 }
